@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/num1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number 1"
+            android:inputType="number"
+            android:backgroundTint="#F5F5F5"
+            android:textColor="#333"/>
+        <EditText
+            android:id="@+id/num2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number 2"
+            android:inputType="number"
+            android:backgroundTint="#F5F5F5"
+            android:textColor="#333"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/inputLayout"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Addition"
+            android:background="#FF9800"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Subtraction"
+            android:background="#FF5722"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Multiplication"
+            android:background="#4CAF50"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Division"
+
+        android:background="#2196F3"
+        android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonLayout"
+        android:layout_marginTop="16dp"
+        android:textColor="#333"/>
+
+</RelativeLayout>
